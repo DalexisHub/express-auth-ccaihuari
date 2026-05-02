@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | AUTH System</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="auth-page">
+
+<nav class="teal darken-3">
+    <div class="nav-wrapper">
+        <a href="/signIn" class="brand-logo">AUTH System</a>
+        <ul class="right">
+            <li><a href="/signUp">Crear cuenta</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container auth-container">
+    <div class="card card-rounded auth-card">
+        <div class="card-content">
+            <span class="card-title">Welcome back</span>
+            <p class="card-description">Sign in to continue to your dashboard.</p>
+
+            <form id="signInForm">
+                <div class="input-field">
+                    <input id="email" type="email" required>
+                    <label for="email">Correo electrónico</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="password" type="password" required>
+                    <label for="password">Contraseña</label>
+                </div>
+
+                <p id="message" class="error-text"></p>
+
+                <button class="btn waves-effect waves-light teal darken-3 full-width" type="submit">
+                    Ingresar
+                    <i class="material-icons right">login</i>
+                </button>
+            </form>
+        </div>
+
+        <div class="card-action center-align">
+            <a href="/signUp">¿No tienes cuenta? Regístrate</a>
+        </div>
+    </div>
+</div>
+
+<script src="/js/auth.js"></script>
+<script src="/js/signin.js"></script>
+</body>
+</html>

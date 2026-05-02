@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | AUTH System</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<nav class="teal darken-3">
+    <div class="nav-wrapper">
+        <a href="/dashboard/user" class="brand-logo">AUTH System</a>
+        <ul class="right">
+            <li><a href="/profile">Mi cuenta</a></li>
+            <li><a href="#" data-logout>Cerrar sesión</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container page-container">
+    <header class="page-header">
+        <p class="page-eyebrow">User workspace</p>
+        <h1 class="page-title">Dashboard de usuario</h1>
+        <p class="page-subtitle">Consulta la información asociada a tu sesión y administra los datos básicos de tu cuenta.</p>
+    </header>
+
+    <div class="card card-rounded">
+        <div class="card-content">
+            <span class="card-title">Resumen de sesión</span>
+            <p id="welcomeText">Cargando información...</p>
+        </div>
+    </div>
+
+    <div class="card card-rounded">
+        <div class="card-content">
+            <span class="card-title">Mis datos</span>
+            <p class="card-description">Información disponible desde el token y el perfil autenticado.</p>
+            <ul class="collection" id="userData"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="/js/auth.js"></script>
+<script src="/js/dashboard-user.js"></script>
+</body>
+</html>

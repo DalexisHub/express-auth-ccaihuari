@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | AUTH System</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="auth-page">
+
+<nav class="teal darken-3">
+    <div class="nav-wrapper">
+        <a href="/signIn" class="brand-logo">AUTH System</a>
+        <ul class="right">
+            <li><a href="/signIn">Iniciar sesión</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container auth-container">
+    <div class="card card-rounded auth-card">
+        <div class="card-content">
+            <span class="card-title">Create account</span>
+            <p class="card-description">Register a user profile for role-based access.</p>
+
+            <form id="signUpForm">
+                <div class="form-grid">
+                    <div class="input-field">
+                        <input id="name" type="text" required>
+                        <label for="name">Nombres</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="lastName" type="text" required>
+                        <label for="lastName">Apellidos</label>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <input id="phoneNumber" type="text" required>
+                    <label for="phoneNumber">Teléfono</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="birthdate" type="date" required>
+                    <label for="birthdate" class="active">Fecha de nacimiento</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="email" type="email" required>
+                    <label for="email">Correo electrónico</label>
+                </div>
+
+                <div class="input-field">
+                    <input id="password" type="password" required>
+                    <label for="password">Contraseña</label>
+                    <span class="helper-text">
+                        Mínimo 8 caracteres, 1 mayúscula, 1 número y 1 carácter especial (# $ % & * @)
+                    </span>
+                </div>
+
+                <p id="message" class="error-text"></p>
+
+                <button class="btn waves-effect waves-light teal darken-3" type="submit">
+                    Registrarme
+                    <i class="material-icons right">person_add</i>
+                </button>
+            </form>
+        </div>
+
+        <div class="card-action center-align">
+            <a href="/signIn">Ya tengo una cuenta</a>
+        </div>
+    </div>
+</div>
+
+<script src="/js/signup.js"></script>
+</body>
+</html>
